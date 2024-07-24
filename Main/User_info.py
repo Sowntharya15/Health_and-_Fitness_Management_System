@@ -1,22 +1,13 @@
 class User_info():
-    # def assign_details(self,userName,Email,password,age,gender,height,weight,goal):
-    #     self.userName = userName
-    #     self.Email = Email
-    #     self.password = password 
-    #     self.age = age
-    #     self.gender = gender
-    #     self.height = height
-    #     self.weight = weight
-    #     self.goal = goal
-    def show_details(self):
-        print("USER_NAME: ",self.userName)
-        print("E-MAIL ID: ",self.Email)
-        print("PASSWORD: ",self.password)
-        print("AGE: ",self.age)
-        print("GENDER: ",self.gender)
-        print("HEIGHT: ",self.height)
-        print("WEIGHT: ",self.weight)
-        print("GOAL: ",self.goal)
+    #instance variable :
+    userName = None
+    Email = None
+    password = None
+    age = None
+    gender = None
+    height = None
+    weight = None
+    goal = None
     def set_userName(self,userName):
         self.userName = userName
     def set_Email(self,Email):
@@ -50,7 +41,17 @@ class User_info():
     def get_goal(self):
         return self.goal
     
-    
+    def show_details(self):
+        print("USER_NAME: ",self.userName)
+        print("E-MAIL ID: ",self.Email)
+        print("PASSWORD: ",self.password)
+        print("AGE: ",self.age)
+        print("GENDER: ",self.gender)
+        print("HEIGHT: ",self.height)
+        print("WEIGHT: ",self.weight)
+        print("GOAL: ",self.goal)
+
+
     
 
 
